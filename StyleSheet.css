@@ -1,0 +1,249 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+.container a[href] {
+    color: #4f9593;
+}
+a:hover{
+    color:#174789;
+}
+
+.container {
+    width: 650px;
+    padding:20px 0 10px;
+    margin:auto;
+}
+body {
+    font-family: 'Calibri', sans-serif;
+    color: #333333;
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.person-info {
+    display: flex;
+    align-items: flex-end;
+}
+h1 {
+    line-height: 0.95;
+}
+h1 span{
+    font-size:15px;
+}
+.person-info p {
+    font-size: 17px;
+    margin-left:10px;
+}
+.contact-info {
+    width: 100%;
+    padding: 12px 15px;
+    border-top: 1px solid #c1c1c1;
+    border: 1px solid #c1c1c1;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin:12px 0 17px;
+}
+.contact-info-box{
+    display:flex;
+    align-items:center;
+    font-size:16px;
+}
+.contact-info-box span{
+    margin-right:7px;
+}
+.contact-info-box:nth-child(1),
+.contact-info-box:nth-child(3){
+    width:45%;
+}
+.contact-info-box:nth-child(2),
+.contact-info-box:nth-child(4){
+    width:calc(55% - 20px);
+}
+.contact-info-box a {
+    color: #333333;
+}
+.info-box{
+    margin-bottom:17px;
+}
+.title-box {
+    background-color: #c5f0f0;
+    padding: 4px 12px;
+    font-size: 17px;
+    margin-bottom: 9px;
+}
+.text {
+    font-size: 16px;
+    line-height: 1.27;
+}
+.text span{
+    font-weight:500;
+    font-family:  'Roboto', sans-serif; 
+    font-size: 13.5px;
+}
+.info-block:not(:last-child){
+    margin-bottom:15px;
+}
+.info-content span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size:13.5px;
+}
+.info-content b {
+    display: block;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    font-size:13.5px;
+    padding:0 10px;
+}
+
+.sub-title {
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+.info-title{
+    font-weight:600;
+}
+.date-info {
+    padding-left: 18px;
+    background-image: url(icons/calendar.png);
+    background-size: 13.5px;
+    background-position: left 1px;
+    background-repeat:no-repeat;
+}
+.info-top{
+    display:flex;
+    margin-bottom: 5px;
+}
+.info-top .text{
+    font-size:15px;
+}
+.info-block:not(:last-child) {
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #C9C9C9;
+}
+.skils-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+.skils-box {
+    width:100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.skils-title {
+    width:100px;
+    font-size: 15px;
+    font-weight:400;
+    color: #5a5a5a;
+}
+.skils-list{
+    display:flex;
+    flex-wrap:wrap;
+    gap:3px;
+    list-style-type:none
+}
+.skils-list li{
+    color:#333333;
+    font-size:13px;
+    font-weight:500;
+    font-family:  'Roboto', sans-serif; 
+}
+.skils-list li:not(:last-child){
+    margin-right:3px;
+}
+.skils-list li:not(:last-child)::after{
+    content:',';
+}
+.skils-list li:last-child::after{
+    content:'.';
+}
+.info-content-box:not(:last-child) {
+    margin-bottom: 7px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #C9C9C9;
+}
+/*.languages .skils-box:not(:last-child) {
+    margin-bottom: 27px;
+}*/
+.languages .skils-title {
+    width:auto;
+}
+.language-wrap {
+    display: flex;
+    justify-content:space-between;
+}
+.languages .skils-box {
+    width: auto;
+}
+.languages .skils-title {
+    font-size: 16px;
+}
+.languages .skils-list li {
+    font-size: 15px;
+}
+.languages .skils-list li span{
+    font-size:13px;
+}
+.info-education {
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+.info-education span{
+    font-weight:500;  
+    font-family: 'Roboto', sans-serif;
+    font-size:14px;
+}
+.list-info{
+    list-style-type:none;
+    padding-left:12px;
+}
+
+.list-info li {
+    line-height: 1.27;
+    color: #4e4e4e;
+    padding-left: 5px;
+}
+
+.list-info li::marker {
+    content: "– ";
+    font-weight: 600;
+    color: #4f9593;
+}
+
+@media print {
+    .list-info li::marker {
+        content: "– ";
+        font-weight: 600;
+        color: #4f9593;
+    }
+    body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}
+.list-info li:not(:last-child){
+    margin-bottom:5px;
+}
+.list-info li span {
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+.for-ATS-only {
+    width: 1px;
+    font-size: 0.01px;
+}
